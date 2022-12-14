@@ -1,0 +1,29 @@
+ion-content {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+        url("/assets/fondoreg.png") no-repeat center center / cover;
+}
+
+ion-list {
+    background-color: rgb(190, 157, 6);
+}
+
+ion-item {
+    background-color: rgb(190, 157, 6);
+    color-interpolation-filters: auto;
+   
+    opacity: 0.7;
+
+}
+
+ion-card{
+    margin-top: 40%;
+    background-color: rgb(190, 157, 6);
+    opacity: 0.7;
+}
+ion-button{
+    
+    margin-left: 3.5%;
+    margin-right: 4%;
+    font-weight: bold;
+}
+

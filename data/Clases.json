@@ -1,0 +1,49 @@
+{
+  "clases": [
+    {
+      "clase": "Programacion De Aplicaciones Moviles",
+      "fecha": "12/12/2022",
+      "id": 2
+    },
+    {
+      "clase": "Etica Para El Trabajo",
+      "fecha": "13/12/2022",
+      "id": 3
+    },
+    {
+      "clase": "Programacion De Aplicaciones Moviles",
+      "fecha": "15/05/12",
+      "id": 4
+    },
+    {
+      "clase": "Calidad De Software",
+      "fecha": "15/05/12",
+      "id": 5
+    },
+    {
+      "clase": "Proceso De Portafolio 4",
+      "fecha": "22/12/2022",
+      "id": 6
+    },
+    {
+      "clase": "Proceso De Portafolio 4",
+      "fecha": "22/22/15",
+      "id": 7
+    },
+    {
+      "clase": "Etica Para El Trabajo",
+      "fecha": "22/22/15",
+      "id": 8
+    },
+    {
+      "clase": "Etica Para El Trabajo",
+      "fecha": "14/12/2022",
+      "id": 9
+    },
+    {
+      "clase": "Arquitectura",
+      "fecha": "14/12/2022",
+      "id": 10
+    }
+  ]
+}

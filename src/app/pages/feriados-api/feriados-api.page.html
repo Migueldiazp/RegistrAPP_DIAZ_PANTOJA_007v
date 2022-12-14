@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>FERIADOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card id="tar">
+    <ion-list *ngFor="let libres of dias">
+
+      <ion-card class="tarjeta">
+        <ion-card-subtitle class="fuente">{{libres.date}}</ion-card-subtitle>
+        <ion-card-title class="subtitle">{{libres.title}}</ion-card-title>
+      </ion-card>
+    </ion-list>
+  </ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

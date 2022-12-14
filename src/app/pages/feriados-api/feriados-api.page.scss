@@ -1,0 +1,12 @@
+ion-content {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+        url("/assets/fondoreg.png") no-repeat center center / cover;
+}
+
+
+#tar {
+    margin-block-start: 40%;
+    margin-block-end: 20%;
+    background: rgba(5, 7, 12, 0.30);
+    opacity: 0.9;
+}

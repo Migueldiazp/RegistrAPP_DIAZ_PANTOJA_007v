@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Agregar</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/listar-clases']">
+         Listar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre: </ion-label>
+      <ion-input type="text" name="txtNombre" [(ngModel)]="newClase.clase" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">fecha: </ion-label>
+      <ion-input type="text" name="txtTipo" [(ngModel)]="newClase.fecha" required></ion-input>
+    </ion-item>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)=" crearClase()" expand="block" fill="outline" color="success" shape="round">
+          Agregar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

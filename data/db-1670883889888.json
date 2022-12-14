@@ -1,0 +1,28 @@
+{
+  "clases": [
+    {
+      "id": 1,
+      "nombre": "LuluSSS",
+      "tipoMascota": "Perrita",
+      "raza": "de Casa"
+    },
+    {
+      "id": 2,
+      "nombre": "RainMan",
+      "tipoMascota": "Tortuguita",
+      "raza": "de Agua"
+    },
+    {
+      "nombre": "Animalito Nuevo",
+      "tipoMascota": "Mascota Nueva",
+      "raza": "Raza Nueva",
+      "id": 3
+    },
+    {
+      "nombre": "princesa",
+      "tipoMascota": "perrita",
+      "raza": "pastora aleman",
+      "id": 4
+    }
+  ]
+}

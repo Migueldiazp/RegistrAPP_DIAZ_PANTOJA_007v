@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-back-button></ion-back-button>
+    <ion-title>Despliegue QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content id="cont2">
+        <ion-toolbar>
+          <ion-title>QR CLASE</ion-title>
+
+        </ion-toolbar>
+        <ion-list>
+          <ion-card id="carcode">
+            
+            <qrcode [qrdata]="qrCodeString" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+            
+          </ion-card>
+          <ion-buttons slot="end">
+            <ion-button color="dark" expand="block" (click)="modal.dismiss()">Close</ion-button>
+          </ion-buttons>
+
+        </ion-list>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-card>
+  <ion-item>
+    <ion-list>
+      <ion-item >
+        <ion-label position="floating">Ingrese Fecha: </ion-label>
+        <ion-input type="text" name="txtTipo" [(ngModel)]="newClase.fecha" required></ion-input>
+      </ion-item>
+      <ion-item>
+
+        
+        <ion-select interface="popover" placeholder="Seleccione Seccion" [(ngModel)]="newClase.clase" required>
+          <ion-select-option value="Arquitectura">ASY4131-009V</ion-select-option>
+          <ion-select-option value="Calidad De Software">CSY4111-008V</ion-select-option>
+          <ion-select-option value="Estadistica Descriptiva">MAT4140-010V</ion-select-option>
+          <ion-select-option value="Etica Para El Trabajo">EAY4470-009V</ion-select-option>
+          <ion-select-option value="Proceso De Portafolio 4">APY4461-001V</ion-select-option>
+          <ion-select-option value="Programacion De Aplicaciones Moviles">PGY4121-007V </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    </ion-list>
+  </ion-item>
+ 
+</ion-card>
+
+<ion-button (click)="GENERARsCAN()"  (click)=" crearClase()" class="ion-margin"  id="open-modal" expand="block">Generar Codigo QR</ion-button>
+
+<ion-button (click)="verScan()" class="ion-margin"  expand="block"   > Resultados</ion-button>
+<ion-button class="ion-margin"  expand="block"  [routerLink]="['/listar-clases']" >Clases Presentadas</ion-button>
+<ion-item id="res">
+  <ion-label  class="ion-text-wrap" >{{scannedResult}} </ion-label>
+</ion-item>
+
+
+</ion-content>

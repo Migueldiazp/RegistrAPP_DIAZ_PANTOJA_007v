@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-toolbar color="warning">
+ 
+
+    <ion-buttons slot="start">
+      <ion-menu-button color="primary" auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start"></ion-buttons>
+    <ion-title  color="primary">Portal Alumnos</ion-title>
+    <a id="cerrar" (click)=" cerrarSesion()">salir</a>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  
+  <img src="assets/camara.png" class="ion-padding" >
+
+  <ion-button (click)="scanear()"  expand="block">Scanear Asistencia</ion-button>
+
+
+  <ion-card>
+    <ion-label  class="ion-text-wrap" >{{codigo}}</ion-label>
+  </ion-card>
+
+  <br>
+
+  
+</ion-content>

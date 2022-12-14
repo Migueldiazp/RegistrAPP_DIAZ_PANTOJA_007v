@@ -1,0 +1,40 @@
+<ion-menu  side="start" menuId="first" contentId="alumno" swipe-gesture="false">
+
+  <ion-header>
+    <ion-toolbar color="warning">
+      <h2 class="title1">Menu RegistrAPP</h2>
+      <p class="titleNuestraApp">Tu asistencia Facil</p>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+     
+
+      <ion-menu-toggle  [autoHide]="true" >
+        <ion-item [routerLink]="['/perfil']" class="item1">Mi Perfil <ion-icon  slot="end" name="camera-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle [autoHide]="true">
+        <ion-item [routerLink]="['captura']">
+          Registrar Asistencia <ion-icon  slot="end" name="camera-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+
+      <ion-item> <h3 class="title2">Mi Asistencia </h3> <ion-icon slot="end" name="checkmark-done-outline"></ion-icon></ion-item>
+      <ion-menu-toggle [autoHide]="true">
+      <ion-item [routerLink]="['/feriados-api']"> Feriados <ion-icon  slot="end" name="calendar-outline"> </ion-icon>
+      </ion-item>
+    </ion-menu-toggle>
+     
+    </ion-list>
+
+    <ion-menu-toggle [autoHide]="true">
+      <ion-button position="floating" (click)="cerrarSesion()" color="dark" >Cerrar sesión </ion-button>
+    </ion-menu-toggle>
+
+    <p class="version">V.1.0</p>
+  </ion-content>
+
+</ion-menu>
